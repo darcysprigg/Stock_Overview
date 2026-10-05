@@ -45,7 +45,7 @@ def generate_price_graph(five_year_stock_data):
     plt.savefig(graph_output_path)
 
     return graph_output_path
-
+ 
 # Download stock data
 def download_stock_data(input_ticker):
 
