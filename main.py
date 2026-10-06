@@ -20,7 +20,7 @@ from datetime import date
 import matplotlib.pyplot as plt
 
 # Selected stock
-input_ticker = "AAPL"
+input_ticker = "GOOG"
 
 # Main file
 def main():
