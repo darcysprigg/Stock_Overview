@@ -20,7 +20,7 @@ from datetime import date
 import matplotlib.pyplot as plt
 
 # Selected stock
-input_ticker = "GOOG"
+input_ticker = "AAPL"
 
 # Main file
 def main():
@@ -133,7 +133,6 @@ def generate_pdf(graph_output_path, metrics_dict, stock_data):
     output_pdf.drawString(70, 570, f"Number of Employees: {metrics_dict["numEmployees"]}")
     output_pdf.drawString(70, 540, f"Headquarters: {metrics_dict["City"]}, {metrics_dict["State/Province"]}, {metrics_dict["Country"]}")
 
-
     output_pdf.setFont("Times-Bold", 22)
     output_pdf.drawString(70, 490,f"Current Analytical Consensus:")
 
@@ -237,7 +236,6 @@ def generate_pdf(graph_output_path, metrics_dict, stock_data):
     output_pdf.showPage()
 
     output_pdf.save()
-
 
     return
 
